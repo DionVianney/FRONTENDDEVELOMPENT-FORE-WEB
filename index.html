@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fore Coffee Store - Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .store-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="p-10 text-center">
+        <h1 class="text-4xl font-bold text-[#004d40] mb-6">Our Store</h1>
+        <div class="bg-gray-200 h-64 rounded-xl flex items-center justify-center mb-10 shadow-inner">
+            <p class="text-gray-500 font-medium italic">[ Peta Lokasi Store ]</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 mb-20">
+        <div id="store-container" class="store-grid">
+            </div>
+    </main>
+
+    <script>
+        // 1. DATA ARRAY: Sumber data utama
+        const stores = [
+            {
+                name: "Fore Coffee - Senopati",
+                address: "Jl. Senopati No. 64, Jakarta Selatan",
+                hours: "07:00 - 22:00",
+                img: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=300&q=80"
+            },
+            {
+                name: "Fore Coffee - Gandaria City",
+                address: "Lantai UG, Kebayoran Lama, Jakarta Selatan",
+                hours: "10:00 - 22:00",
+                img: "" // Contoh gambar kosong untuk testing rendering
+            },
+            {
+                name: "Fore Coffee - Tunjungan Plaza",
+                address: "TP 6 Lantai 2, Surabaya",
+                hours: "10:00 - 22:00",
+                img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            },
+            {
+                name: "Fore Coffee - Paris Van Java",
+                address: "Resort Level, Bandung",
+                hours: "10:00 - 22:00",
+                img: "https://images.unsplash.com/photo-1501339819358-ee5f8b473c90?auto=format&fit=crop&w=300&q=80"
+            }
+        ];
+
+        // 2. FUNGSI RENDERING & LOOPING
+        const renderStores = () => {
+            const container = document.getElementById('store-container');
+            
+            // Kita gunakan looping 'map' atau 'forEach'
+            container.innerHTML = stores.map(store => {
+                // Logic: Jika img kosong, gunakan placeholder
+                const imageSrc = store.img || 'https://via.placeholder.com/150?text=No+Image';
+
+                return `
+                    <div class="flex gap-4 border-b border-gray-100 pb-8 hover:bg-gray-50 transition p-2 rounded-lg">
+                        <div class="w-32 h-32 flex-none">
+                            <img src="${imageSrc}" class="w-full h-full object-cover rounded-md shadow-sm" alt="${store.name}">
+                        </div>
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-[#004d40] uppercase">${store.name}</h2>
+                                <p class="text-sm text-gray-500 mt-1">${store.address}</p>
+                            </div>
+                            <div class="mt-2">
+                                <p class="text-xs font-semibold text-green-700 uppercase">🕒 ${store.hours}</p>
+                                <button class="mt-2 border border-[#004d40] text-[#004d40] text-[10px] font-bold px-4 py-1.5 rounded-full hover:bg-[#004d40] hover:text-white transition-colors">
+                                    LIHAT DETAIL
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join(''); // Join untuk menggabungkan array menjadi string HTML
+        };
+
+        // Jalankan fungsi saat halaman dimuat
+        renderStores();
+    </script>
+</body>
+</html>

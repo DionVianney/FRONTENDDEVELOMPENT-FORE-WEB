@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Store | Fore Coffee Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        .fore-green { color: #004d40; }
+        .bg-fore { background-color: #004d40; }
+        .card-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <div class="fixed bottom-6 right-6 z-[9999]">
+        <a href="https://wa.me/6281211116456" target="_blank" 
+           class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.438 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.122.547 4.191 1.59 6.033L0 24l6.105-1.602a11.83 11.83 0 005.937 1.598h.005c6.637 0 12.032-5.395 12.034-12.03a11.83 11.83 0 00-3.532-8.503z"/>
+            </svg>
+        </a>
+    </div>
+
+    <nav class="border-b sticky top-0 bg-white z-50">
+    <div class="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-8">
+            <img src="https://upload.wikimedia.org/wikipedia/id/e/e8/Fore_coffee_logo_%281%29.png" alt="Fore Logo" class="h-7">
+            
+            <div class="hidden lg:flex gap-6 text-[12px] font-semibold text-[#004d40] uppercase tracking-wider">
+                <a href="#" class="hover:opacity-70 transition">About</a> 
+                <a href="#" class="hover:opacity-70 transition">Menu</a> 
+                <a href="#" class="border-b-2 border-[#004d40] pb-1">Store</a>
+                <a href="#" class="hover:opacity-70 transition">Investors</a> 
+                <a href="#" class="hover:opacity-70 transition">GCG</a>
+                <a href="#" class="hover:opacity-70 transition">Collaboration</a>
+                <a href="#" class="hover:opacity-70 transition">News</a>
+                <a href="#" class="hover:opacity-70 transition">Career</a>
+                <a href="#" class="hover:opacity-70 transition">Contact Us</a>
+                
+                <div class="flex items-center gap-1 cursor-pointer ml-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" class="w-4 h-3 shadow-sm" alt="ID">
+                    <span>ID</span>
+                    <span class="text-[8px]">▼</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+            <button class="border border-[#004d40] text-[#004d40] px-6 py-2 rounded-full text-[12px] font-bold hover:bg-[#004d40] hover:text-white transition duration-300">
+                Download App
+            </button>
+            
+            <div class="flex items-center gap-2 text-[12px] font-bold border-l pl-6 border-gray-200">
+                <a href="?lang=en" class="text-[#004d40] hover:opacity-70">EN</a>
+                <span class="text-gray-300">|</span>
+                <a href="?lang=id" class="text-gray-400 hover:text-[#004d40]">ID</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <section class="max-w-6xl mx-auto px-6 mt-10">
+        <div class="w-full h-[450px] rounded-[40px] overflow-hidden border border-gray-100 shadow-sm">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.9080644331!2d106.7891285!3d-6.2293867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371eeb91bc44c9d!2sFore%20Coffee!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <div class="text-center mt-12 mb-16">
+        <h1 class="text-5xl font-extrabold fore-green tracking-tight">Our Store</h1>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-6 mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+            
+            <% 
+            const stores = [
+                { name: "A.H Nasution", addr: "Jl. A.H Nasution No. 64, Medan", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/IMG_9241.JPG" },
+                { name: "Adam Malik", addr: "Jl. H. Adam Malik, Medan Barat", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Adam%20Malik%20Medan.jpg" },
+                { name: "Aeon Mall Deltamas", addr: "Cikarang, Bekasi, Jawa Barat", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Untitled-2.jpg" },
+                { name: "Aeon Mall Sentul", addr: "Sentul City, Bogor, Jawa Barat", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/sentul2812.jpeg" },
+                { name: "AEON Tanjung Barat", addr: "Jagakarsa, Jakarta Selatan", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/AEONTanjungBarat-181121.jpg" },
+                { name: "Ahmad Yani Banjarmasin", addr: "Jl. A. Yani KM 6, Banjarmasin", time: "06:30 - 22:00", img: "https://static.fore.coffee/store_image/AEONTanjungBarat-181121.jpg" },
+                { name: "Ahmad Yani Banyuwangi", addr: "Jl. Jenderal Ahmad Yani, Banyuwangi", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/ayani2402.jpeg" },
+                { name: "Ahmad Yani Kudus", addr: "Jl. Jend. Ahmad Yani, Kudus", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/arayaplaza257.jpeg" },
+                { name: "Ahmad Yani Lampung", addr: "Jl. Ahmad Yani, Bandar Lampung", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Bintaro%20Sektor%20V_11zon.jpg" },
+                { name: "Ahmad Yani Samarinda", addr: "Jl. Ahmad Yani, Samarinda", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Untitled-4.jpg" },
+                { name: "Ahmad Yani Serang", addr: "Jl. Jend. Ahmad Yani, Serang", time: "08:00 - 22:00", img: "https://static.fore.coffee/store_image/WhatsApp%20Image%202023-09-20%20at%2012.12.39.jpeg" },
+                { name: "Ahmad Yani Surabaya", addr: "Jl. Ahmad Yani, Surabaya", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Alauddin Makassar", addr: "Jl. Sultan Alauddin, Makassar", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Alternative Cibubur", addr: "Jl. Raya Cibubur, Depok", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Ambarukmo Plaza", addr: "Sleman, Yogyakarta", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Artha Gading", addr: "Kelapa Gading, Jakarta Utara", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Banda Bandung", addr: "Jl. Banda, Bandung", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Basuki Rahmat", addr: "Jl. Basuki Rahmat, Surabaya", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Bintaro Exchange", addr: "Bintaro, Tangerang Selatan", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Botani Square", addr: "Bogor Tengah, Bogor", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Central Park", addr: "Grogol, Jakarta Barat", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Cihampelas Walk", addr: "Coblong, Bandung", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Cirebon Super Block", addr: "Kesambi, Cirebon", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Dharmawangsa", addr: "Kebayoran Baru, Jakarta Selatan", time: "07:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" },
+                { name: "Duta Mall", addr: "Melayu, Banjarmasin", time: "10:00 - 22:00", img: "https://static.fore.coffee/store_image/Banjar%20Baru_11zon.jpg" }
+            ];
+            %>
+
+            <% stores.forEach(store => { %>
+                <div class="flex gap-5 border border-gray-200 p-5 rounded-[20px] card-shadow hover:border-green-800 transition-all group">
+                    <div class="w-32 h-32 flex-none bg-gray-100 rounded-xl overflow-hidden shadow-inner">
+                        <img src="<%= store.img %>" alt="<%= store.name %>" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.src='https://fore.coffee/wp-content/uploads/2018/11/logo-fore.png'; this.classList.add('p-4','opacity-30')">
+                    </div>
+
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-base font-extrabold fore-green uppercase tracking-tight mb-2 leading-none"><%= store.name %></h2>
+                            <div class="flex gap-2 items-start">
+                                <span class="text-green-600 text-xs mt-0.5">📍</span>
+                                <p class="text-[11px] text-gray-400 font-medium leading-relaxed line-clamp-2">
+                                    <%= store.addr %>
+                                </p>
+                            </div>
+                            <a href="#" class="text-[10px] text-green-700 font-bold underline mt-1 block">See on Google Maps</a>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="text-[10px] font-bold text-green-800 flex items-center gap-1">
+                                🕒 <%= store.time %>
+                            </div>
+                            <div class="text-green-800 opacity-0 group-hover:opacity-100 transition-opacity">
+                                ➔
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+
+        </div>
+    </main>
+
+    <section class="bg-[#f2f5f4] py-20 mt-10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-bold tracking-[4px] text-gray-400 uppercase mb-2">Fore Coffee</p>
+            <h2 class="text-4xl font-extrabold fore-green mb-12 uppercase tracking-tight">Store Concept</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="relative rounded-xl overflow-hidden shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1 rounded text-[10px] font-bold text-gray-700">Leisure</div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden shadow-md group border-b-4 border-green-800">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1 rounded text-[10px] font-bold text-gray-700">Mall</div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1 rounded text-[10px] font-bold text-gray-700">Fore Go</div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-3 left-3 bg-white/90 px-3 py-1 rounded text-[10px] font-bold text-gray-700">Flagship</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-8 border-t border-gray-50">
+        <div class="max-w-7xl mx-auto px-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
+                
+                <div>
+                    <img src="https://fore.coffee/wp-content/uploads/2018/11/logo-fore.png" alt="Fore Logo" class="h-10 mb-8 opacity-90">
+                    <p class="text-[11px] text-gray-400 font-medium leading-relaxed">
+                        © 2025 Fore Coffee. All rights reserved. <br>
+                        <span class="hover:text-green-800 cursor-pointer">Terms and Conditions</span> • 
+                        <span class="hover:text-green-800 cursor-pointer">Privacy Policy</span>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-[10px] font-extrabold fore-green uppercase tracking-[2px] mb-8">Customer Center</h4>
+                    <div class="flex items-start gap-3 mb-5">
+                        <span class="text-green-800 mt-1">📍</span>
+                        <p class="text-[11px] text-gray-500 font-medium leading-relaxed">
+                            <strong class="text-gray-700 uppercase">Gedung Graha Ganesha</strong> <br>
+                            Lantai 1 Suite 120 & 130 <br>
+                            Jl. Hayam Wuruk No. 28, Kelurahan Kebon Kelapa, <br>
+                            Kecamatan Gambir, Jakarta Pusat, DKI Jakarta
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-green-800">📞</span>
+                        <p class="text-[11px] text-gray-700 font-bold tracking-wider">0812-1111-6456</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-[10px] font-extrabold fore-green uppercase tracking-[2px] mb-8">Consumer Complaints Service</h4>
+                    <p class="text-[11px] text-gray-500 font-medium leading-relaxed mb-6">
+                        Directorate General of Consumer Protection and Trade Compliance, Ministry of Trade of the Republic of Indonesia
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <span class="text-[#25D366]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                            </svg>
+                        </span>
+                        <p class="text-[11px] text-gray-700 font-bold tracking-tight">WhatsApp Ditjen PKTN: 0853-1111-1010</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 pt-8 gap-6 text-gray-400">
+                <div class="flex gap-8 text-xl">
+                    <a href="#" class="hover:text-green-800 transition">📸</a>
+                    <a href="#" class="hover:text-green-800 transition">✖️</a>
+                    <a href="#" class="hover:text-green-800 transition">🎵</a>
+                    <a href="#" class="hover:text-green-800 transition">💼</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
