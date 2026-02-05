@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Store | Fore Coffee Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">    
     <style>
         body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
         .fore-green { color: #004d40; }
@@ -65,7 +65,7 @@
     <section class="max-w-6xl mx-auto px-6 mt-10">
         <div class="w-full h-[450px] rounded-[40px] overflow-hidden border border-gray-100 shadow-sm">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.9080644331!2d106.7891285!3d-6.2293867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371eeb91bc44c9d!2sFore%20Coffee!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.908064331!2d106.7891285!3d-6.2293867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371eeb91bc44c9d!2sFore%20Coffee!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
@@ -167,62 +167,82 @@
         </div>
     </section>
 
-    <footer class="bg-white pt-20 pb-8 border-t border-gray-50">
-        <div class="max-w-7xl mx-auto px-10">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
-                
-                <div>
-                    <img src="https://fore.coffee/wp-content/uploads/2018/11/logo-fore.png" alt="Fore Logo" class="h-10 mb-8 opacity-90">
-                    <p class="text-[11px] text-gray-400 font-medium leading-relaxed">
-                        © 2025 Fore Coffee. All rights reserved. <br>
-                        <span class="hover:text-green-800 cursor-pointer">Terms and Conditions</span> • 
-                        <span class="hover:text-green-800 cursor-pointer">Privacy Policy</span>
-                    </p>
-                </div>
+   <footer class="bg-white pt-20 pb-8 border-t border-gray-100">
+  <div class="max-w-7xl mx-auto px-8">
 
-                <div>
-                    <h4 class="text-[10px] font-extrabold fore-green uppercase tracking-[2px] mb-8">Customer Center</h4>
-                    <div class="flex items-start gap-3 mb-5">
-                        <span class="text-green-800 mt-1">📍</span>
-                        <p class="text-[11px] text-gray-500 font-medium leading-relaxed">
-                            <strong class="text-gray-700 uppercase">Gedung Graha Ganesha</strong> <br>
-                            Lantai 1 Suite 120 & 130 <br>
-                            Jl. Hayam Wuruk No. 28, Kelurahan Kebon Kelapa, <br>
-                            Kecamatan Gambir, Jakarta Pusat, DKI Jakarta
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="text-green-800">📞</span>
-                        <p class="text-[11px] text-gray-700 font-bold tracking-wider">0812-1111-6456</p>
-                    </div>
-                </div>
+    <!-- TOP FOOTER -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
 
-                <div>
-                    <h4 class="text-[10px] font-extrabold fore-green uppercase tracking-[2px] mb-8">Consumer Complaints Service</h4>
-                    <p class="text-[11px] text-gray-500 font-medium leading-relaxed mb-6">
-                        Directorate General of Consumer Protection and Trade Compliance, Ministry of Trade of the Republic of Indonesia
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <span class="text-[#25D366]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                            </svg>
-                        </span>
-                        <p class="text-[11px] text-gray-700 font-bold tracking-tight">WhatsApp Ditjen PKTN: 0853-1111-1010</p>
-                    </div>
-                </div>
+      <!-- LOGO & COPYRIGHT -->
+      <div>
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/id/e/e8/Fore_coffee_logo_%281%29.png"
+          alt="Fore Coffee Logo"
+          class="h-10 mb-6"
+        />
+        <p class="text-[11px] text-gray-400 leading-relaxed">
+          © 2025 Fore Coffee. All rights reserved.<br>
+          <a href="#" class="hover:text-[#004d40]">Terms and Conditions</a> • 
+          <a href="#" class="hover:text-[#004d40]">Privacy Policy</a>
+        </p>
+      </div>
 
-            </div>
+      <!-- CUSTOMER CENTER -->
+      <div>
+        <h4 class="text-[10px] font-extrabold text-[#004d40] uppercase tracking-[2px] mb-6">
+          Customer Center
+        </h4>
 
-            <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 pt-8 gap-6 text-gray-400">
-                <div class="flex gap-8 text-xl">
-                    <a href="#" class="hover:text-green-800 transition">📸</a>
-                    <a href="#" class="hover:text-green-800 transition">✖️</a>
-                    <a href="#" class="hover:text-green-800 transition">🎵</a>
-                    <a href="#" class="hover:text-green-800 transition">💼</a>
-                </div>
-            </div>
+        <div class="flex gap-3 text-[11px] text-gray-500 leading-relaxed mb-4">
+          <span>📍</span>
+          <p>
+            <strong class="text-gray-700 uppercase">Gedung Graha Ganesha</strong><br>
+            Lantai 1 Suite 120 & 130<br>
+            Jl. Hayam Wuruk No. 28, Kel. Kebon Kelapa<br>
+            Kec. Gambir, Jakarta Pusat, DKI Jakarta
+          </p>
         </div>
-    </footer>
-</body>
-</html>
+
+        <div class="flex items-center gap-3 text-[11px] font-bold text-gray-700">
+          <span>📞</span>
+          <span>0812-1111-6456</span>
+        </div>
+      </div>
+
+      <!-- CONSUMER COMPLAINTS -->
+      <div>
+        <h4 class="text-[10px] font-extrabold text-[#004d40] uppercase tracking-[2px] mb-6">
+          Consumer Complaints Service
+        </h4>
+
+        <p class="text-[11px] text-gray-500 leading-relaxed mb-5">
+          Directorate General of Consumer Protection and Trade Compliance,<br>
+          Ministry of Trade of the Republic of Indonesia
+        </p>
+
+        <div class="flex items-center gap-3 text-[11px] font-bold text-gray-700">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            class="w-4 h-4"
+            alt="WhatsApp"
+          />
+          <span>WhatsApp Ditjen PKTN: 0853-1111-1010</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM FOOTER -->
+    <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 pt-8 text-gray-400">
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex gap-6 text-xl">
+        <a href="#" class="hover:text-[#004d40]">📸</a>
+        <a href="#" class="hover:text-[#004d40]">✖️</a>
+        <a href="#" class="hover:text-[#004d40]">🎵</a>
+        <a href="#" class="hover:text-[#004d40]">💼</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
